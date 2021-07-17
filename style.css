@@ -82,12 +82,12 @@
     }
     
     li {
-      font-size: 1.125rem;
+      font-size: 1rem;
       padding: .75rem;
     }
     
     li span {
-      font-size: 3.375rem;
+      font-size: 1rem;
     }
   }
   .theme-switch-wrapper {
