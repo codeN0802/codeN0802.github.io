@@ -1,10 +1,15 @@
-(function () {
+let inputvalue;
+var inputele = document.querySelector('input[type="date"]');
+console.log(inputele);
+inputele.onchange = function(e){
+  inputvalue = e.target.value;
+  (function () {
     const second = 1000,
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24;
           
-    let birthday = "1/1/2022 00:00:00",
+    let birthday = inputvalue,
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
   
@@ -31,3 +36,6 @@
           //seconds
         }, 0)
     }());
+
+};
+
